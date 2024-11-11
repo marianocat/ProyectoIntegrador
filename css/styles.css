@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.menu {
+    position: sticky;
+    top: auto;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    height: 100vh;
+}
+
+.flex-menu {
+    display: flex;
+
+    flex-direction: column;
+    gap: 15px;
+}
+
+.flex-menu a {
+    display: inline-block;
+    background-color: var(--color-menu-item-fondo);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.flex-menu a:hover {
+    background-color: var(--color-menu-hover-background-color);
+    color: var(--color-menu-texto-hover);
+}
+
+.header,
+.footer {
+    display: grid;
+    grid-column: 1 / 3;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+section {
+    margin-bottom: 1.5rem;
+}
+
+
+.main {
+    grid-column: 2 / 3;
+}
+
+.imgplato {
+    display: block;
+    max-width: 100%;
+    /*Este hace que las imagenes necajen bien en el contenedor*/
+}
+
+.Grilla-Cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 0.5rem;
+    padding-right: 0.5rem;
+    margin: 1rem auto;
+}
+
+.Card {
+    background-image: linear-gradient(to bottom, blueviolet, white);
+    max-width: 461px;
+    padding: 0.5rem;
+    border: 0.2rem solid var(--color-card-borde);
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem var(--color-card-boxshadow);
+    
+    /* transition: transform 0.3s ease; */
+    transform: scale(1);
+}
+
+.Grilla-Cards:hover .Card:hover {
+    transform: scale(1.05);
+    filter: blur(0rem);
+}
+
+/* Solo cuando una Card tiene hover, reduce las demás */
+.Grilla-Cards:has(.Card:hover) .Card:not(:hover) {
+    /* transform: translateY(-5px); */
+    filter: blur(0.1rem);
+}
+
+/*INICIO-FORMULARIO DE CONTACTO*/
+.Contacto {
+    display: block;
+    border: 0.125rem solid var(--color-contacto-border); /*2px =1/16*2 */
+    background-color: var(--color-contacto-background);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    max-width: 90%;
+    margin: 0 auto;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
+}
+
+input[type="email"], textarea {
+    width: 100%;
+    padding: 0.625em; /* Equivalente a 10px */
+    border: 0.063em solid var(--color-input-border); /* Equivalente a 1px */
+    border-radius: 0.25em; /* Equivalente a 4px */
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    background-color: var(--color-input-backgound);
+}
+
+button[type="submit"] {
+    background-color: var(--color-contacto-border);
+    color: var(--color-boton-texto);
+    padding: 0.625em 1.25em; /* Equivalente a 10px y 20px */
+    border: none;
+    border-radius: 0.25em; /* Equivalente a 4px */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:active {
+    transform: scale(0.95);
+}
+
+
+button[type="submit"]:hover {
+    background-color: var(--color-boton-background-hover);
+}
+
+input[type="email"]:focus, textarea:focus {
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+button[type="submit"] {
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button[type="submit"]:active {
+    transform: scale(0.95);
+}
+
+
+textarea {
+    height: 10rem;
+}
+
+fieldset {
+    border: none;
+}
+/*FIN-FORMULARIO DE CONTACTO*/
+
+@media (max-width: 768px) {
+    .grid-layout {
+        grid-template-columns: 1fr;
+    }
+}

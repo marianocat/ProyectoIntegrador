@@ -1,0 +1,23 @@
+:root {
+    /* --color-primario: #a8dadc;
+    --color-secundario: #457b9d;
+    --color-fondo: #f1faee;
+    --color-texto: #1d3557;
+    --color-acento: #e63946; */
+    
+    --color-menu-item-fondo: aqua;
+    --color-menu-hover-background-color: blue;
+    --color-menu-texto-hover: white;
+    
+    --color-card-borde: lightseagreen;
+    --color-card-boxshadow: lightseagreen;
+
+    --color-contacto-border: #4a4a4a;
+    --color-contacto-background: #f9f9f9;
+
+    --color-input-border: #ddd;
+    --color-input-background: azure;
+
+    --color-boton-texto: white;
+    --color-boton-background-hover: #333;
+}
