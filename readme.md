@@ -1,17 +1,27 @@
-- [Practica de la clase 7](#practica-de-la-clase-7)
+- [Pre entrerga de proyecto final curso JS Front End](#pre-entrerga-de-proyecto-final-curso-js-front-end)
   - [Tecnologia](#tecnologia)
-  - [Usos](#usos)
+  - [Heramientas](#heramientas)
+  - [Objetivo](#objetivo)
   - [Licencia](#licencia)
 
 
 
-# Practica de la clase 7
-Se trata de armar una pagina donde se acomoden un conjuto de cards
-usando grid y media query
+# Pre entrerga de proyecto final curso JS Front End
+Un proyecto simple de preparacion para constituir la base del proyecto final.
+Se explorara Flexbox, Grid, Media Queryes y paletas de colores
+
 ## Tecnologia
-1. HTML
+1. HTML semantico
 2. CSS
-## Usos
-Sirve para practicar la teoria del curso
+
+## Heramientas
+1. VSCode
+2. Git
+
+## Objetivo
+Se generaran dos showrooms, implementado con Flexbox y otro con Grid
+Se contara con al menos un formulario de contacto adaptable a distintos tamaños de pantalla usando Media Query
+Se simulara una navegacion entre paginas usando un menu
+Se usara un hosting para la entrega
+
 ## Licencia
-2024 Comon GPL+
