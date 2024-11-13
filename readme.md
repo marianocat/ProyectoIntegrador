@@ -25,3 +25,4 @@ Se simulara una navegacion entre paginas usando un menu
 Se usara un hosting para la entrega
 
 ## Licencia
+2024 GPL
