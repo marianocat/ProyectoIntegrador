@@ -1,0 +1,43 @@
+
+.imgplato {
+    display: block;
+    max-width: 100%;
+    /*Este hace que las imagenes necajen bien en el contenedor*/
+}
+
+.Grilla-Cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    gap: 0.5rem;
+    padding-right: 0.5rem;
+    margin: 1rem auto;
+}
+
+.Card {
+    flex: 1 1 15rem;
+    background-image: linear-gradient(to bottom, blueviolet, white);
+    /* max-width: 461px; */
+    /* min-width: 461px; */
+    padding: 0.5rem;
+    border: 0.2rem solid var(--color-card-borde);
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem var(--color-card-boxshadow);
+
+    /* transition: transform 0.3s ease; */
+    transform: scale(1);
+}
+
+.Grilla-Cards:hover .Card:hover {
+    transform: scale(1.05);
+    filter: blur(0rem);
+}
+
+/* Solo cuando una Card tiene hover, reduce las demás /*
+/* .Grilla-Cards:has(.Card:hover) .Card:not(:hover) { /*
+    /* transform: translateY(-5px); */
+    /* filter: blur(0.1rem); */
+/* }  */
