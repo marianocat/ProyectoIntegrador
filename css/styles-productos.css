@@ -33,7 +33,6 @@
 
 .Grilla-Cards:hover .Card:hover {
     transform: scale(1.05);
-    filter: blur(0rem);
 }
 
 /* Solo cuando una Card tiene hover, reduce las demás /*
