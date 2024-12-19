@@ -35,8 +35,58 @@
     transform: scale(1.05);
 }
 
+.gradientePlato {
+    background-image: linear-gradient(to bottom, blueviolet, white);
+}
+
 /* Solo cuando una Card tiene hover, reduce las demás /*
 /* .Grilla-Cards:has(.Card:hover) .Card:not(:hover) { /*
     /* transform: translateY(-5px); */
     /* filter: blur(0.1rem); */
 /* }  */
+
+/*BOTONES PARA AGREGAR Y QUITAR DEL CARRITO----------------------------------------*/
+
+figure {
+    position: relative;
+}
+
+.controls {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.controls button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background-color: lightgray;
+}
+
+.controls .counter {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btnDetalles {
+    display: block;
+    background-color: blueviolet;
+    border-color: blueviolet;
+    border-radius: 0.3em;
+    width: 100%;
+    font-size: 1.2em;
+}
