@@ -54,7 +54,10 @@ document.addEventListener('DOMContentLoaded', async () => {
             card.classList.add('Card');
 
             card.innerHTML = `
-                <h2>${producto.Nombre}</h2>
+                <div class="tituloProducto">
+                    <h2>${producto.Nombre}</h2>
+                    <h3>${producto.Amount}</h3>
+                </div>
                 <figure>
                     <img class="imgplato" src="${producto.Img}" alt="${producto.ImgAlt}">
                     <div class="controls">

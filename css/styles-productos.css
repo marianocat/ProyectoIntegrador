@@ -31,12 +31,18 @@
     transform: scale(1);
 }
 
+
 .Grilla-Cards:hover .Card:hover {
     transform: scale(1.05);
 }
 
 .gradientePlato {
     background-image: linear-gradient(to bottom, blueviolet, white);
+}
+
+.tituloProducto {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Solo cuando una Card tiene hover, reduce las demás /*
