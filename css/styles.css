@@ -13,7 +13,7 @@ body {
 .grid-layout {
     display: grid;
     grid-template-columns: 200px 1fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: min-content 1fr auto;
     /* gap: 0.1em; */
     height: 100vh;
     background-color: darkgreen;
@@ -83,6 +83,15 @@ section {
     background-color: blue;
 }
 
+
+.btnDecorado {
+    border-radius: 1.5rem;
+    background-color: var(--color-menu-item-fondo);
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    margin-left: 1.5rem;
+}
 /*INICIO-PARA QUE SE ESCALE EL VIDEO INCRUSTADO*/
 
 .cont-iframe     {width:95%;height:100%;margin:0 auto;}

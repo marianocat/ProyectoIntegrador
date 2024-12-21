@@ -13,7 +13,7 @@ body {
 .grid-layout {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: min-content 1fr auto auto;
+    grid-template-rows: auto auto 1fr;
     /* gap: 0.1em; */
     height: 100vh;
     background-color: darkgreen;
@@ -53,6 +53,7 @@ body {
     text-decoration: none;
     text-align: center;
     padding: 10px;
+    margin: 0.1rem 0.5rem;
 }
 
 .flex-menu a:hover {
@@ -81,10 +82,25 @@ section {
 
 /*FIN-PARA QUE SE ESCALE EL VIDEO INCRUSTADO*/
 
+.btnDecorado {
+    border-radius: 1.5rem;
+    background-color: var(--color-menu-item-fondo);
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    margin-left: 1.5rem;
+}
+
 @media (max-width: 768px) {
     .grid-layout {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto 1fr;
+    }
+
+    .flex-menu a {
+        background-color: var(--color-menu-item-fondo);
+        text-decoration: none;
+        margin: 0.1rem 0.1rem;
     }
 
     .header,
